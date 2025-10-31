@@ -8,14 +8,19 @@
     body {
       margin: 0;
       font-family: 'Roboto Mono', monospace;
-      background-color: #000000;
+      background: radial-gradient(circle at corners, #001f3f 0%, #000000 60%);
       color: #00ff00;
     }
 
     header {
       padding: 40px 20px;
       text-align: center;
-      background-color: #001f3f;
+      background-color: rgba(0, 31, 63, 0.8);
+    }
+
+    header img {
+      width: 120px;
+      margin-bottom: 10px;
     }
 
     header h1 {
@@ -63,26 +68,14 @@
       background-color: #003366;
     }
 
-    .contact {
-      margin-top: 40px;
-    }
-
-    .social-icons a {
-      margin: 0 10px;
-      color: #00ff00;
-      text-decoration: none;
-      font-size: 24px;
-      transition: color 0.3s ease;
-    }
-
-    .social-icons a:hover {
-      color: #1abc9c;
+    .language-switch {
+      margin-top: 30px;
     }
 
     footer {
       text-align: center;
       padding: 20px;
-      background-color: #001f3f;
+      background-color: rgba(0, 31, 63, 0.8);
       color: #00ff00;
       font-size: 14px;
     }
@@ -91,6 +84,7 @@
 <body>
 
   <header>
+    <img src="logo.png" alt="Logo de Anthony">
     <h1>¡Hola, soy Anthony!</h1>
     <p>Desarrollador en formación | Apasionado por la tecnología y la música digital</p>
   </header>
@@ -114,14 +108,9 @@
 
     <button onclick="alert('Gracias por visitar mi página, pronto sabrás más de mí')">Contáctame</button>
 
-    <div class="contact">
-      <h2>📬 Contacto</h2>
-      <p>¡Conéctate conmigo en redes sociales!</p>
-      <div class="social-icons">
-        <a href="https://github.com/anthonytech-go" target="_blank">GitHub</a>
-        <a href="#" target="_blank">LinkedIn</a>
-        <a href="#" target="_blank">YouTube</a>
-      </div>
+    <div class="language-switch">
+      <p>¿Prefieres inglés?</p>
+      <button onclick="window.location.href='index-en.html'">English Version</button>
     </div>
   </section>
 
